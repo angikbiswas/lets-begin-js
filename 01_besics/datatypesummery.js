@@ -32,3 +32,32 @@ const myfunction= function(){
 
 //console.log(typeof myfunction)=>function
 //console.log(typeof mybio); =>object
+
+
+
+//######################### Memory #####################
+//stack memory
+//heap memory 
+
+//stack
+let bigint= 355353435252525555n
+let biginttwo= bigint
+ biginttwo= 5565633
+
+console.log(biginttwo)
+console.log(bigint)
+
+//heap memory
+
+let user={
+    name: "Angik",
+    email: "Angikbiswas123@gmail.com"
+}
+
+let usertwo= user
+
+//console.log(usertwo)
+
+usertwo.email="Tulanbiswas23@gmail.com"
+console.log(user)
+console.log(usertwo)
