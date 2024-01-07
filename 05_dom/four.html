@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Fourth lesson</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="Languages">
+        <li>javascript</li>
+    </ul>
+    
+</body>
+<script>
+    function addLanguages(LangName) {
+        const li= document.createElement('li')
+        const addText= document.createTextNode(`${LangName}`)
+        li.appendChild(addText)
+        document.querySelector('.Languages').appendChild(li)
+
+        
+    }
+    addLanguages('python')
+    addLanguages('cpp')
+
+    //edit
+    const secondLang=document.querySelector("li:nth-child(2)")
+    const newli= document.createElement('li')
+    newli.textContent="Mojo"
+    secondLang.replaceWith(newli)
+
+    //edit
+    const firstLang=document.querySelector("li:first-child")
+    firstLang.outerHTML='<li>typeScript</li>'
+
+    //remove
+
+    const lastLang=document.querySelector("li:last-child")
+    lastLang.remove()
+   
+
+
+</script>
+</html>

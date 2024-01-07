@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Third Lession</title>
+</head>
+<body style="background-color: black;">
+
+    
+</body>
+
+<script>
+  const div= document.createElement('div')
+  console.log(div);
+  div.className="Main"
+  //div.id= Math.round((Math.random()*10+1))
+  ////div.title="generate title"
+  //div.setAttribute("title", "generate title")
+  //div.style.backgroundColor='green'
+  ////div.innerHTML="Hi world"
+  //const text=document.createTextNode("Hi world")
+  //div.appendChild(text)
+  //document.body.appendChild(div)
+
+  const div2= document.createElement('div')
+  div2.className="one"
+  const addText= document.createTextNode('one')
+  div2.appendChild(addText)
+  
+
+  const div3= document.createElement('div')
+  div3.className="two"
+  const addTexttwo= document.createTextNode('two')
+  div3.appendChild(addTexttwo)
+  
+
+  const div4= document.createElement('div')
+  div4.className="three"
+  const addTextthree= document.createTextNode('three')
+  div4.appendChild(addTextthree)
+
+
+  div.appendChild(div2)
+  div.appendChild(div3)
+  div.appendChild(div4)
+  
+
+  //const aldiv=document.getElementsByClassName('.Main')
+  //console.log(aldiv);
+
+  for (let index = 0; index < div.children.length; index++) {
+    div.children[index].style.color='red'
+    
+    
+  }
+
+  document.body.appendChild(div)
+
+ 
+  
+  
+
+  
+
+
+</script>
+</html>
